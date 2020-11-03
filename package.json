@@ -1,0 +1,74 @@
+{
+  "_from": "git+https://github.com/sevencooks-gmbh-co-kg/cordova-plugin-add-extension.git",
+  "_id": "cordova-plugin-today-widget@1.0.0",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/cordova-plugin-today-widget",
+  "_phantomChildren": {
+    "simple-plist": "1.1.1",
+    "xmldom": "0.1.31"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "git+https://github.com/sevencooks-gmbh-co-kg//cordova-plugin-add-extension.git",
+    "rawSpec": "git+https://github.com/sevencooks-gmbh-co-kg//cordova-plugin-add-extension.git",
+    "saveSpec": "git+https://github.com/sevencooks-gmbh-co-kg//cordova-plugin-add-extension.git",
+    "fetchSpec": "https://github.com/sevencooks-gmbh-co-kg//cordova-plugin-add-extension.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/sevencooks-gmbh-co-kg//cordova-plugin-add-extension.git",
+  "_spec": "git+https://github.com/sevencooks-gmbh-co-kg//cordova-plugin-add-extension.git",
+  "_where": "",
+  "author": {
+    "name": "SevenCooks GmbH & Co. KG"
+  },
+  "bugs": {
+    "url": "https://github.com/sevencooks-gmbh-co-kg//cordova-plugin-add-extension/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "elementtree": "^0.1.7",
+    "file-system": "^2.2.2",
+    "path": "^0.12.7",
+    "plist": "^2.1.0",
+    "q": "^1.5.1",
+    "xcode": "git+https://github.com/apache/cordova-node-xcode.git"
+  },
+  "deprecated": false,
+  "description": "Add a manually created XCode extension to your cordova project.",
+  "devDependencies": {
+    "husky": "^0.13.4",
+    "lint-staged": "^3.6.0",
+    "prettier": "^1.4.2"
+  },
+  "homepage": "https://github.com/sevencooks-gmbh-co-kg//cordova-plugin-add-extension",
+  "keywords": [
+    "iOS",
+    "App Extension",
+    "Widget",
+    "Cordova",
+    "Ionic",
+    "Plugin",
+    "node-excode"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "prettier --parser javascript --single-quote --print-width 80 --tab-width 2 --trailing-comma es5 --list-different --write",
+      "git add"
+    ]
+  },
+  "name": "cordova-plugin-today-widget",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sevencooks-gmbh-co-kg//cordova-plugin-add-extension.git"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "version": "1.0.0"
+}
