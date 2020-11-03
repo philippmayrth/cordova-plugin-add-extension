@@ -32,9 +32,9 @@
       </array>
     </config-file>
 
-    <hook type="after_plugin_add" src="hooks/prerequisites.js"/>
-    <hook type="after_plugin_add" src="hooks/copyExtensionFolder.js"/>
-    <hook type="after_plugin_add" src="hooks/addExtensionToProject.js"/>
+    <hook type="before_prepare" src="hooks/prerequisites.js"/>
+    <hook type="before_prepare" src="hooks/copyExtensionFolder.js"/>
+    <hook type="before_prepare" src="hooks/addExtensionToProject.js"/>
     <hook type="after_prepare" src="hooks/fixAppEntitlements.js"/>
   </platform>
 </plugin>
