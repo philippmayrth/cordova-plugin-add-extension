@@ -13,15 +13,15 @@
   <platform name="ios">
     <config-file parent="/*" target="config.xml" ></config-file>
 
-    <config-file parent="com.apple.security.application-groups" target="*-Info.plist">
+    <!-- <config-file parent="com.apple.security.application-groups" target="*-Info.plist">
       <array>
-        <string>group.com.sevencooks.wochenplan.SevenCooksWidgetExtension</string>
+        <string>group.__APP_IDENTIFIER__</string>
       </array>
-    </config-file>
+    </config-file> -->
 
     <!-- Check if these are even necessary... -->
 
-    <!-- <config-file parent="com.apple.security.application-groups" target="*-Debug.plist">
+    <config-file parent="com.apple.security.application-groups" target="*-Debug.plist">
       <array>
         <string>group.__APP_IDENTIFIER__</string>
       </array>
@@ -30,7 +30,7 @@
       <array>
         <string>group.__APP_IDENTIFIER__</string>
       </array>
-    </config-file> -->
+    </config-file>
 
     <hook type="after_plugin_add" src="hooks/prerequisites.js"/>
     <hook type="after_plugin_add" src="hooks/copyExtensionFolder.js"/>
