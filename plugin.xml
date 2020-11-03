@@ -15,7 +15,7 @@
 
     <config-file parent="com.apple.security.application-groups" target="*-Info.plist">
       <array>
-        <string>group.__APP_IDENTIFIER__</string>
+        <string>group.com.sevencooks.wochenplan.SevenCooksWidgetExtension</string>
       </array>
     </config-file>
 
