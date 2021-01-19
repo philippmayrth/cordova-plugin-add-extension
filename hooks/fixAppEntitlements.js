@@ -79,6 +79,9 @@ module.exports = function (context) {
   var etree = elementTree.parse(contents);
   var bundleId = etree.getroot().get('id');
 
+  log('Found bundle id!: '+ bundleId, 'success');
+
+
   var iosFolder = context.opts.cordova.project
     ? context.opts.cordova.project.root
     : path.join(context.opts.projectRoot, 'platforms/ios/');
