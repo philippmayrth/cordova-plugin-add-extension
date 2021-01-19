@@ -184,6 +184,13 @@ module.exports = function (context) {
         },
       ]
 
+      var xConfigPlaceholderValues = [
+        {
+          placeHolder: '__APP_IDENTIFIER__',
+          value: bundleId,
+        },
+      ]
+
       fs.readdirSync(widgetFolder).forEach(file => {
         if (!/^\..*/.test(file)) {
           // Ignore junk files like .DS_Store
@@ -213,9 +220,10 @@ module.exports = function (context) {
                 )
               }
               if (fileExtension === '.xcconfig') {
+                log('Patching xconfig files with bundle id: ' + bundleId, 'info')
                 replacePlaceholdersInPlist(
                   path.join(widgetFolder, file),
-                  placeHolderValues,
+                  xConfigPlaceholderValues,
                 )
                 addXcconfig = true
                 xcconfigFileName = file
