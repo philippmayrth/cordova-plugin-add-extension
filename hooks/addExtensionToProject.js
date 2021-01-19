@@ -213,6 +213,10 @@ module.exports = function (context) {
                 )
               }
               if (fileExtension === '.xcconfig') {
+                replacePlaceholdersInPlist(
+                  path.join(widgetFolder, file),
+                  placeHolderValues,
+                )
                 addXcconfig = true
                 xcconfigFileName = file
               }
